@@ -16,6 +16,23 @@ public class Reverse_Each_Words_InString {
 		}
 	}
 
+	@Test
+	public void ReverseEachWord() {
+
+		String s ="welcome to tp office";
+		String[] arr = s.split(" ");
+		String rev = "";
+		   
+		    for(int i=0;i<=arr.length-1;i++) {
+		    	String s2 = arr[i];
+		    	
+		    	for(int j=s2.length()-1;j>=0;j--) {
+		    		rev=rev+s2.charAt(j);
+		    	}
+		    	rev=rev+" ";
+		    }
+		    System.out.println(rev);
+	}
 
 
 @Test
